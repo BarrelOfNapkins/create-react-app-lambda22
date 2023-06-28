@@ -10,7 +10,6 @@ const handleItemClick = (item) => {
 function Title() {
   return (
     <div>
-      <h1>my website</h1>
       <nav>
         <ul>
           <li>
