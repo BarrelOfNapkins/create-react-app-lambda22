@@ -5,12 +5,14 @@ import {
   Nav,
   NavLink,
   NavMenu,
+  Bars,
 } from './NavbarElements';
 
 function Title() {
   return (  
     <>
       <Nav>
+        <Bars />
         <NavMenu>
           <NavLink to='/test1' activeStyle>
             test1
