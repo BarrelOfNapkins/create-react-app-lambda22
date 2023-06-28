@@ -1,6 +1,14 @@
 // src/Title.js
 import './Title.css';
 import React from 'react'
+import {
+  Nav,
+  NavLink,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
+} from './NavbarElements';
 
 const handleItemClick = (item) => {
   // Handle click logic here
@@ -8,16 +16,14 @@ const handleItemClick = (item) => {
 };
 
 function Title() {
-  return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-          <button onClick={() => handleItemClick('Home')}>Home</button>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  return (  
+    <NavMenu>
+      <ul>
+        <li>
+        <button onClick={() => handleItemClick('Home')}>Home</button>
+        </li>
+      </ul>
+    </NavMenu>
   )
 }
 
