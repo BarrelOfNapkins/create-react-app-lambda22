@@ -18,11 +18,12 @@ const handleItemClick = (item) => {
 function Title() {
   return (  
     <NavMenu>
-      <ul>
-        <li>
-        <button onClick={() => handleItemClick('Home')}>Home</button>
-        </li>
-      </ul>
+      <NavLink to='/test1' activeStyle>
+        test1
+      </NavLink>
+      <NavLink to='/test2' activeStyle>
+        test2
+      </NavLink>
     </NavMenu>
   )
 }
