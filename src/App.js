@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import "./App.css"
+import Title from './Title'
 /*
 class LambdaDemo extends Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Title />
         <header className="App-header">
           <p>
             Edit <code>src/App.js</code> and save to reload.
