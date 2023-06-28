@@ -52,7 +52,7 @@ class App extends Component {
       <Router>
         <Title />
         <Routes>
-          <Route path ='/' exact component={Home} />
+          <Route path ='/' component={Home} />
           <Route path ='/about' component={About} />
         </Routes>
       </Router>
