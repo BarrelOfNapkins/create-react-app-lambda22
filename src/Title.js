@@ -6,11 +6,6 @@ import {
   NavMenu,
 } from './NavbarElements';
 
-const handleItemClick = (item) => {
-  // Handle click logic here
-  console.log(`Clicked ${item}`);
-};
-
 function Title() {
   return (  
     <NavMenu>
