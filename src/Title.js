@@ -14,16 +14,13 @@ function Title() {
       <Nav>
         <Bars />
         <NavMenu>
-          <NavLink to='/test1' activeStyle>
-            test1
-          </NavLink>
-          <NavLink to='/test2' activeStyle>
-            test2
+          <NavLink to='/about' activeStyle>
+            About
           </NavLink>
         </NavMenu>
       </Nav>
     </>
-  )
+  );
 }
 
 export default Title
