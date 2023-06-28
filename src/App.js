@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import "./App.css"
 import Title from './Title'
+import Home from './pages/home';
+import About from './pages/about';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 /*
 class LambdaDemo extends Component {
   constructor(props) {
@@ -35,6 +38,7 @@ class LambdaDemo extends Component {
 class App extends Component {
   render() {
     return (
+      /*
       <div className="App">
         <Title />
         <header className="App-header">
@@ -43,6 +47,15 @@ class App extends Component {
           </p>
         </header>
       </div>
+      */
+
+      <Router>
+        <Title />
+        <Routes>
+          <Route path ='/' exact component={Home} />
+          <Route path ='/about' component={About} />
+        </Routes>
+      </Router>
     )
   }
 }
