@@ -3,25 +3,19 @@ import "./App.css"
 import Navbar from './components/Navbar'
 import Recipes from './pages/Recipes'
 import Home from './pages/Home'
-//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {Route, Routes} from "react-router-dom"
 
 class App extends Component {
   render() {
-    let component
-    // eslint-disable-next-line default-case
-    switch (window.location.pathname) {
-      case "/":
-        component = <Home />
-        break
-      case "/Recipes":
-        component = <Recipes />
-        break
-    }
-
     return (
       <>
         <Navbar/>
-        {component}
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Recipes" element={<Recipes />} />
+          </Routes>
+        </div>
       </>
     )
   }
